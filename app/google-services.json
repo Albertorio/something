@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "544623817816",
+    "firebase_url": "https://cine-3677c.firebaseio.com",
+    "project_id": "cine-3677c",
+    "storage_bucket": "cine-3677c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544623817816:android:c81873d1b27a5c26",
+        "android_client_info": {
+          "package_name": "com.chamas.lalbertorio.cine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544623817816-kd0up0h66f8lhgqe4odrgmmqh00mho4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1c7jDx9EmjS79ELz_PTsiZMO5km4E8fM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
