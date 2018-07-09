@@ -7,7 +7,7 @@ import org.json.JSONArray;
 
 /*
     POJO that ties the movie info the api brings into an object
-    for easier management
+    for easier management add something here
  */
 public class RetroMovies {
 
