@@ -13,7 +13,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 
+import retrofit2.Retrofit;
+
 public class MainActivity extends AppCompatActivity {
+
+    Retrofit retrofit;
+    String base_url = "https://cinepr.herokuapp.com/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,24 +29,28 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void processFinish(String result) {
 //                System.out.println(result);
-                try {
-                    JSONObject theather = new JSONObject(result.trim());
-                    Iterator<?> keys = theather.getJSONObject("aguadilla").keys();
-                    LinkedHashMap<String, JSONArray> movies;
+//                try {
+//                    JSONObject theather = new JSONObject(result.trim());
+//                    Iterator<?> keys = theather.getJSONObject("aguadilla").keys();
+//                    LinkedHashMap<String, JSONArray> movies;
+//
+//                    while(keys.hasNext()){
+//                        String key = (String)keys.next();
+//                        if(theather.get(key) instanceof LinkedHashMap<?,?>){
+//                            movies = (LinkedHashMap<String, JSONArray>) keys.next();
+//                        }
+//                    }
+//
+//
+//
+//
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                }
 
-                    while(keys.hasNext()){
-                        String key = (String)keys.next();
-                        if(theather.get(key) instanceof LinkedHashMap<?,?>){
-                            movies = (LinkedHashMap<String, JSONArray>) keys.next();
-                        }
-                    }
 
 
 
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
             }
         }).execute("aguadilla");
 
